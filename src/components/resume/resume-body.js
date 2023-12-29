@@ -61,7 +61,7 @@ const ResumeBody = () => {
                
                        
              </div>
-             <span>**this resume constracted by React Components,</span>
+             <span>**this resume constructed by React Components,</span>
         </div>
     )
 }
