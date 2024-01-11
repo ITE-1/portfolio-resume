@@ -7,6 +7,7 @@
     margin: 0 auto;
     background-color: rgb(206, 210, 213);
     &__education {
+      
         h2{ font-size: 26px;
             text-align: center;
                width: 80%;
@@ -23,6 +24,13 @@
         font-weight: 600;
        
         &__list{
+          &__span{
+            span{
+              text-align: center;
+              font-size: 18;
+            }
+           
+          }
          li{
           list-style: none;
          }
@@ -57,7 +65,8 @@
       padding: 0;
       list-style: none;
       justify-content: center;
-  
+     
+      
       li {
         border: 2px solid rgb(0, 0, 0);
         height: 70px;
@@ -80,3 +89,10 @@
     }
   }
   
+ 
+@media (max-width: 600px) {
+  .resume__body__education__list li {
+    opacity: 0;
+  }
+ 
+}

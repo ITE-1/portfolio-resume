@@ -29,10 +29,10 @@ const ResumeBody = () => {
             </div>
             <div className='resume__body__education'>
             <h2 className="resume__body__skills__name">Education:</h2>
-             
+                 
                 
                     <ul className="resume__body__education__list">
-                     
+                    <span className="resume__body__education__list__span">tap here</span>
                          <li className="resume__body__education__list__item">
                           *JavaScript Course, Books, on Udemy,YouTube,StackOverflow, ChatGpt3.5 Official Documentation 1.5 Year.
                          </li>

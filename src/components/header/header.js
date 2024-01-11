@@ -11,9 +11,13 @@ const Header = () => {
             <div className="header">
                 <div className='header__row'>
                     <div className='header__row__navigation'>
-                        <a href='#body'>My Works</a>
-                        <a href='#contacts'>Contacts</a>
-                        <a href='#about'>About Me</a>
+                        <ul className='header__row__navigation__list'>
+                            <li className='header__row__navigation__item'><a href='#body'>My Works</a></li>
+                            <li className='header__row__navigation__item'><a href='#contacts'>Contacts</a></li>
+                            <li className='header__row__navigation__item'><a href='#about'>About Me</a></li>
+                        </ul>
+                       
+                       
                     </div>
                 </div>
             </div>
