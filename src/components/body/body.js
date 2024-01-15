@@ -15,20 +15,23 @@ const data = [
                 {id: 'skills', title: 'My Works', body: 'some information about me'},
             ];
 ////////////////
-   const downloadCV = () => {
-    // Путь к вашему файлу
-    const filePath = './CV.pdf';
-    // Создаем ссылку для скачивания
-    const link = document.createElement('a');
-    link.href = filePath;
-    link.download = 'CV.pdf'; // Имя файла для скачивания
-    document.body.appendChild(link);
-    // Запускаем скачивание
-    link.click();
+const downloadCV = () => {
     
-    // Удаляем ссылку из DOM
-    document.body.removeChild(link);
-   }         
+}
+//    const downloadCV = () => {
+//     // Путь к вашему файлу
+//     const filePath = './CV.pdf';
+//     // Создаем ссылку для скачивания
+//     const link = document.createElement('a');
+//     link.href = filePath;
+//     link.download = 'CV.pdf'; // Имя файла для скачивания
+//     document.body.appendChild(link);
+//     // Запускаем скачивание
+//     link.click();
+    
+//     // Удаляем ссылку из DOM
+//     document.body.removeChild(link);
+//    }         
 
     return (
 
