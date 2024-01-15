@@ -16,10 +16,11 @@ const data = [
             ];
 ////////////////
 const DownloadCv = () => {
+    const fileName = 'CV.pdf';
     const filePath = 'https://github.com/ITE-1/portfolio-resume/blob/main/downloads/CV.pdf';
 
     return (
-        <a href={filePath} download='CV.pdf'>DownLoadCV</a>
+        <a href={filePath} download={fileName}>DownLoadCV</a>
     )
 
 }
