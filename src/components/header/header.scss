@@ -1,4 +1,13 @@
 .header {
+
+  &__logo{
+    margin-left: 2%;
+    margin-right: 1%;
+    button{
+      border-radius: 2%;
+      padding: 1%;
+    }
+  }
  margin-bottom: 5%;
     display: flex;
     flex-direction: column;
@@ -43,14 +52,16 @@
       // border: 1px solid rgba(255, 255, 255, 0.24);
       width: 70%;
       display: flex;
+      column-gap: 1%;
       justify-content: space-between;
-      align-items: center;
-  
+     align-items: center;
       &__navigation {
+        display: flex;
+        align-items: center;
         color: white;
         padding: 1rem;
         &__item{
-
+text-align: right;
           &__link{
             cursor: pointer;
             scroll-behavior: smooth;
@@ -90,9 +101,15 @@
 
   @media (max-width: 600px) {
    .header__row {
+ 
     width: 100%;
     height: 50%;
-    font-size: 14;
+    font-size: 16px;
     font-weight: 500;
+
+    &__navigation__item{
+      font-size: 16px;
+      font-weight: 400;
+    }
    }
   }

@@ -26,15 +26,20 @@ const navBar = () => {
 document.addEventListener('scroll', navBar)
     return (
             <div className='header'>
+                
                 <div className='header__row' id='headerRow'>
-                <button onClick={toggleTheme}>changeTheme</button>
+                <div className='header__logo'>Change Color Theme
+                <button onClick={toggleTheme}>Press Here</button>
+                </div>
+               
                     <div className='header__row__navigation'>
                         <ul className='header__row__navigation__list'>
                             <li className='header__row__navigation__item'><div className='header__row__navigation__item__link' onClick={() => scrollToSection('works')}>My Works</div></li>
                             <li className='header__row__navigation__item'><div className='header__row__navigation__item__link' onClick={() => scrollToSection('contacts')}>Contacts</div></li>
                             <li className='header__row__navigation__item'><div className='header__row__navigation__item__link' onClick={() => scrollToSection('about')}>About Me</div></li>
+
                         </ul>
-                       
+                        <span>|||</span>
                        
                     </div>
                 </div>
