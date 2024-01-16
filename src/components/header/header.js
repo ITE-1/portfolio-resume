@@ -34,9 +34,9 @@ document.addEventListener('scroll', navBar)
                
                     <div className='header__row__navigation'>
                         <ul className='header__row__navigation__list'>
-                            <li className='header__row__navigation__item'><span className='header__row__navigation__item__link' onClick={() => scrollToSection('works')}>My Works</span></li>
+                            <li className='header__row__navigation__item'><span className='header__row__navigation__item__link' onClick={() => scrollToSection('works')}>Works</span></li>
                             <li className='header__row__navigation__item'><span className='header__row__navigation__item__link' onClick={() => scrollToSection('contacts')}>Contacts</span></li>
-                            <li className='header__row__navigation__item'><span className='header__row__navigation__item__link' onClick={() => scrollToSection('about')}>About Me</span></li>
+                            <li className='header__row__navigation__item'><span className='header__row__navigation__item__link' onClick={() => scrollToSection('about')}>About</span></li>
 
                         </ul>
                         <span>|||</span>

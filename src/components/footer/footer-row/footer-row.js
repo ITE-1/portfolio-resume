@@ -6,7 +6,7 @@ const FooterRow = () => {
 const {isDarkMode} = useTheme();
 
     return (
-        <div className={`footer__row ${isDarkMode ? 'light' : 'none'}`}>
+        <div className='footer__row'>
             <div className="">s</div>
         </div>
     )
