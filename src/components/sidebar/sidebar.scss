@@ -1,6 +1,7 @@
 .sidebar {
     top: 50%;
     left: 2%;
+    z-index: 1000;
     position: fixed;
     &__row {
         display: flex;

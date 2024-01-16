@@ -36,7 +36,8 @@ const clearForm = (e) => {
 
   return (
     <div className='body__content__row__window' id='contacts'>
-      <form className='contactUS' ref={form} onSubmit={sendEmail}>
+      <h1 className='body__content__row__window__title'>Title</h1>
+      <form className='contactUS' ref={form} onSubmit={sendEmail} >
         {loading ? 'Форма успешн отправлена' : ''}
       <label>Name</label>
       <input type="text" name="user_name" value={value.userName} onChange={(e) => setValue({...value, userName: e.target.value})}/>

@@ -27,7 +27,7 @@ const data = [
                   
                       <div className='body__content__row'>
                             <div className='body__content__row__window' id='about'>
-                                <h1>About Me</h1>
+                            <h1 className='body__content__row__window__title'>Title</h1>
                                 <DownloadCv />
                            </div>
                             <Works />

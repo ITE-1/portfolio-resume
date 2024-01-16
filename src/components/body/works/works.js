@@ -44,7 +44,8 @@ const sliderData = [
 
 
     return (
-        <div className="body__content__row__window" id="works" >
+        <div className="body__content__row__window" id='works'>
+            <h1 className='body__content__row__window__title' >Title</h1>
             <div className="works__carousel"
                 onDoubleClick={nextSlide}
                 >
