@@ -1,0 +1,28 @@
+.works {
+   border: 2px solid black;
+    height: 70vh;
+
+
+    &__carousel {
+        height: 70vh;
+        display: grid;
+        grid-template-columns: 1% auto 1%;
+        
+        &__wrapper {
+            margin-left: 2%;
+            display: flex;
+            .block0 {
+                width: 100%;
+                background-color: chocolate;
+            }
+            .block1 {
+                background-color: blue;
+                width: 100%;
+            }
+            .block2 {
+                width: 100%;
+                background-color: aquamarine;
+            }
+        }
+    }
+}

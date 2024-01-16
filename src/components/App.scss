@@ -73,7 +73,15 @@ h1, h2, h3, h4, h5, h6 {
   
   width: 100%;
   
-  background-color: $MainColor;
+  &.light-theme {
+    background-color: $MainColor;
+    color: #000000;
+  }
+  
+  &.dark-theme {
+    background-color: $MainColor2;
+    color: #ffffff;
+  }
 
  .scrollToTop{
   position: fixed;

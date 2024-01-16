@@ -4,6 +4,7 @@ import './body.scss';
 import {useState} from 'react';
 import Contacts from './contacts/contacts';
 import ContactUs from './contacts/contacts';
+import Works from './works/works';
 
 
 const Body = () => {
@@ -27,14 +28,15 @@ const data = [
                 <div className='body__content'>
                   
                       <div className='body__content__row'>
-                            <div className='body__content__row__window' id='works'>Works</div>
-                           <div className='body__content__row__window' id='contacts'>
-                            <ContactUs />
-                           </div>
-                           <div className='body__content__row__window' id='about'>
+                            <div className='body__content__row__window' id='about'>
                                 <h1>About Me</h1>
                                 <DownloadCv />
                            </div>
+                            <Works />
+                          
+                            <ContactUs />
+                       
+                         
                       </div>
                        
                             
