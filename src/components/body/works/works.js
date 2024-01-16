@@ -7,6 +7,7 @@ const [currentSlide, setCurrentSlide] = useState(0);
 const [touchStartX, setTouchStartX] = useState(null);
 
 const handleTouchStart = (e) => {
+    console.log('touch start');
     setTouchStartX(e.touches[0].clientX);
   };
 
@@ -19,6 +20,7 @@ const handleTouchMove = (e) => {
     if (deltaX > 50) {
       // Swipe right
       prevSlide();
+      console.log('работает слайдер')
     } else if (deltaX < -50) {
       // Swipe left
       nextSlide();
