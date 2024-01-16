@@ -1,5 +1,5 @@
 .header {
- 
+ margin-bottom: 5%;
   
     margin: 0 auto;
     &__body{
@@ -51,7 +51,9 @@
           gap: 0.5rem;
   
           li {
+            
             a {
+              scroll-behavior: smooth;
               text-decoration: none;
               text-transform: none;
               display: block;
