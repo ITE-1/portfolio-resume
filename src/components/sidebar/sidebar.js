@@ -4,10 +4,10 @@ import './sidebar.scss';
 const LeftSideBar = () => {
 
     const sideBarData = [
-        {name: 'telegram', icon: 'telegram', href: 'telegragm'},
-        {name: 'skype', icon: 'skype', href: 'skype'},
-        {name: 'facebook', icon: 'facebook', href: 'facebook'},
-        {name: 'gmail', icon: 'gmail', href: 'gmail'}
+        {name: 'T', icon: 'telegram', href: 'telegragm'},
+        {name: 'S', icon: 'skype', href: 'skype'},
+        {name: 'F', icon: 'facebook', href: 'facebook'},
+        {name: 'G', icon: 'gmail', href: 'gmail'}
     ]
 
 

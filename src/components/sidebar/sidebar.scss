@@ -1,13 +1,49 @@
 .sidebar {
-    top: 50%;
+    
+    opacity: .6;
+    top: 20%;
     left: 2%;
     z-index: 1000;
     position: fixed;
-    &__row {
-        display: flex;
+    display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__row {
+        border: 2px solid black;
+        box-shadow: 0 8px 8px rgba(0, 0, -6, 15.1);
+        padding: 1%;
+        background-color: darkorange;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+    &__link {
+       
+    }
     }
   
     
 
+}
+
+.sidebar::after{
+    content: '';
+    display: block;
+    width: 3px;
+    height: 70px;
+    background-color: black;
+    
+}
+.sidebar::before{
+    content: '';
+    display: block;
+    width: 3px;
+    height: 70px;
+    background-color: black;
+    
+}
+.sidebar:hover{
+    opacity: 1;
 }

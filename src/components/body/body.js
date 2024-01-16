@@ -11,7 +11,7 @@ const Body = () => {
    
 /////////////////
 const data = [
-                {id: 'works', title: 'My Works', body: 'some information about me'}, 
+                {id: 'works', title: 'WORK', body: 'some information about me'}, 
                 {id: 'contacts', title: 'contacts', body: 'here wil been form soon'},
                 {id: 'aboutme', title: 'About Me', body: 'some information about me'},
                 {id: 'skills', title: 'My Works', body: 'some information about me'},
@@ -26,15 +26,15 @@ const data = [
                 <div className='body__content' >
                   
                       <div className='body__content__row'>
-                            <div className='body__content__row__block' >
-                                <h1 className='body__content__row__block__title' id='about'>About</h1>
+                            <div className='body__content__row__block block2' >
+                               
                                 <DownloadCv />
                             </div>
-                            <div className='body__content__row__block' >
-                                <h1 className='body__content__row__block__title' id='works'>Works</h1>
+                            <div className='body__content__row__block block1' >
+                              
                                 <Works />
                             </div>
-                            <div className='body__content__row__block' >
+                            <div className='body__content__row__block block3' >
                                 <h1 className='body__content__row__block__title' id='contacts'>Contacts</h1>
                                 <ContactUs />
                             </div>

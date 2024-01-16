@@ -1,42 +1,47 @@
 
 
-
-.contacts {
-
-
-
-    form {
-      
-        width: 25%;
-        display: flex;
-        flex-direction: column;
-        label{
-            padding: 2px 3px;
-            margin-bottom: .5deg;
-        }
-    }
-}
-
 .contactUS{
-    padding: 1% 2%;
+    border-radius: 25px;
+  background-color: white;
+    padding: 1% 3%;
     margin-left: 2%;
-    max-width: 80%;
+    max-width: 50%;
+    max-height: 100%;
     display: flex;  
         flex-direction: column;
        border: 2px solid black;
+       &__title{
+        text-decoration: underline;
+        font-weight: 600;
+        margin-bottom: 5%;
+       }
+       &__complete{
+        color: white;
+        background-color: deepskyblue;
+        padding: 1%;
+        border: 1% solid black;
+    }
+    &__btn{
+        font-weight: 600;
+        color: white;
+        background-color: cornflowerblue;
+        border: 2px solid rgb(255, 25, 0);
+        margin-top: 2%;
+        width: 25%;
+        height: 25px;
+    }
        label{
+        padding: 0% 1%;
         margin-bottom: 2%;
        span{
         margin-right: 2%;
        }
         input{
-           
-            padding: 1%;
+           margin-bottom: 1%;
+            padding: 2%;
             border: 1px solid black;
         }
        }
-    form {
-       
-    }
+    
    
 }

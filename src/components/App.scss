@@ -73,15 +73,14 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   
   &.light-theme {
-    background-color: darkgray;
+    // background:#007aff;
     color:white;
     
   }
   
   &.dark-theme {
-    background-color: $MainColor2;
-    font-weight: 600;
-    color: white;
+    background: linear-gradient(to bottom, #001f3f, #00BFFF);
+   color: black;
     
   }
 

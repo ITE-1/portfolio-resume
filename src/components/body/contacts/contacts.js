@@ -36,25 +36,39 @@ const clearForm = (e) => {
 
   return (
   
-      <div className='body__content__row__window' >
-   
+      <div className='body__content__row__window window2' >
+       
       <form className='contactUS' ref={form} onSubmit={sendEmail} >
-        {loading ? 'Форма успешн отправлена' : ''}
+        <h2 className='contactUS__title'>Email contact form:</h2>
+        {loading ? <p className='contactUS__complete'>The form was sending, thank you!</p> : ''}
       <label>
         <span>Name</span>
-      <input type="text" name="user_name" value={value.userName} onChange={(e) => setValue({...value, userName: e.target.value})}/>
+      <input 
+      placeholder='enter your name'
+      type="text" 
+      name="user_name" 
+      value={value.userName} 
+      onChange={(e) => setValue({...value, userName: e.target.value})}/>
       </label>
       
       <label>
         <span>Email</span>
-      <input type="email" name="user_email" value={value.userEmail} onChange={(e) => setValue({...value, userEmail: e.target.value})} />
+      <input 
+      placeholder='enter your email'
+      type="email" 
+      name="user_email" 
+      value={value.userEmail} 
+      onChange={(e) => setValue({...value, userEmail: e.target.value})} />
 
       </label>
       <label>
         <span>Text</span>   
       </label>
-      <textarea style={{border: '1px solid black'}} name="message" value={value.text} onChange={(e) => setValue({...value, text: e.target.value})}/>
-      <button type="submit" onClick={() => clearForm() }>ss</button>
+      <textarea 
+      placeholder='text here...'
+      style={{border: '1px solid black', height: '80px'}} name="message" value={value.text} onChange={(e) => setValue({...value, text: e.target.value})}/>
+      
+      <label style={{display: 'flex', justifyContent:'center', alignItems: 'center'}}><button className='contactUS__btn' type="submit" onClick={() => clearForm() }>SEND</button></label>
     </form>
     </div>
    

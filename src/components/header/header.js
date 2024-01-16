@@ -13,7 +13,7 @@ const navBar = () => {
         document.getElementById('headerRow').style.backgroundColor = 'rgba(38, 79, 120, 0.735)';
     } else {
         document.getElementById('headerRow').style.border = 'none';
-        document.getElementById('headerRow').style.opacity = '.6';
+        document.getElementById('headerRow').style.opacity = '.8';
         document.getElementById('headerRow').style.transition = 'opacity .4s ease';
     }
 }
@@ -28,28 +28,30 @@ document.addEventListener('scroll', navBar)
             <div className='header'>
                 
                 <div className='header__row' id='headerRow'>
-                <div className='header__logo'>Change Color Theme
-                <button onClick={toggleTheme}>Press Here</button>
+                <div className='header__logo'>Logo
+                    {/* <button onClick={toggleTheme}>Press Here</button> */}
                 </div>
                
                     <div className='header__row__navigation'>
                         <ul className='header__row__navigation__list'>
-                            <li className='header__row__navigation__item'><div className='header__row__navigation__item__link' onClick={() => scrollToSection('works')}>My Works</div></li>
-                            <li className='header__row__navigation__item'><div className='header__row__navigation__item__link' onClick={() => scrollToSection('contacts')}>Contacts</div></li>
-                            <li className='header__row__navigation__item'><div className='header__row__navigation__item__link' onClick={() => scrollToSection('about')}>About Me</div></li>
+                            <li className='header__row__navigation__item'><span className='header__row__navigation__item__link' onClick={() => scrollToSection('works')}>My Works</span></li>
+                            <li className='header__row__navigation__item'><span className='header__row__navigation__item__link' onClick={() => scrollToSection('contacts')}>Contacts</span></li>
+                            <li className='header__row__navigation__item'><span className='header__row__navigation__item__link' onClick={() => scrollToSection('about')}>About Me</span></li>
 
                         </ul>
                         <span>|||</span>
                        
                     </div>
                 </div>
-                <div className={`header__body ${isDarkMode ? 'dark' : 'light'}`}>
-                    <div className='header__body__title'>
-                        <h1>Hello, World!</h1>
-                    </div>
+                <div className='header__body'>
+                
+                    {/* <img className='header__body__img' src="https://i.ibb.co/T2ZW8BK/your-front-end-developer-using-html-css-react.webp" alt="your-front-end-developer-using-html-css-react" border="0" /> */}
+                <h1 className='header__body__title'>Hello, World!</h1>
+              
                     
                 <div className='header__body__sliderDown' onClick={() => scrollToSection('about')}>slide down</div>
                 </div>
+              
                 
             </div>
     )
