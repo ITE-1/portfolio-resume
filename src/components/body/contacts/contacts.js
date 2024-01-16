@@ -42,7 +42,7 @@ const clearForm = (e) => {
         <h2 className='contactUS__title'>Email contact form:</h2>
         {loading ? <p className='contactUS__complete'>The form was sending, thank you!</p> : ''}
       <label>
-        <span>Name</span>
+        <span>Name:</span>
       <input 
       placeholder='enter your name'
       type="text" 
@@ -52,7 +52,7 @@ const clearForm = (e) => {
       </label>
       
       <label>
-        <span>Email</span>
+        <span>Email:</span>
       <input 
       placeholder='enter your email'
       type="email" 
@@ -62,7 +62,7 @@ const clearForm = (e) => {
 
       </label>
       <label>
-        <span>Text</span>   
+        <span>Text:</span>   
       </label>
       <textarea 
       placeholder='text here...'
@@ -70,6 +70,7 @@ const clearForm = (e) => {
       
       <label style={{display: 'flex', justifyContent:'center', alignItems: 'center'}}><button className='contactUS__btn' type="submit" onClick={() => clearForm() }>SEND</button></label>
     </form>
+    <div>Title</div>
     </div>
    
     
