@@ -35,8 +35,9 @@ const clearForm = (e) => {
   };
 
   return (
-    <div className='body__content__row__window' id='contacts'>
-      <h1 className='body__content__row__window__title'>Title</h1>
+  
+      <div className='body__content__row__window' >
+   
       <form className='contactUS' ref={form} onSubmit={sendEmail} >
         {loading ? 'Форма успешн отправлена' : ''}
       <label>Name</label>
@@ -48,6 +49,8 @@ const clearForm = (e) => {
       <button type="submit" onClick={() => clearForm() }>ss</button>
     </form>
     </div>
+   
+    
     
   );
 };

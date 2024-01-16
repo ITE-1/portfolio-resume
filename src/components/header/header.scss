@@ -33,7 +33,7 @@
       opacity: .6;
       border-radius: 10px;
       
-      margin-top: 1%;
+      margin-top: .5%;
       z-index: 2;
       background: rgba(38, 79, 120, 0.735);
       position: fixed;
@@ -86,4 +86,12 @@
         }
       }
     }
+  }
+
+  @media (max-width: 600px) {
+   .header__row {
+    width: 100%;
+    font-size: 14;
+    font-weight: 500;
+   }
   }
