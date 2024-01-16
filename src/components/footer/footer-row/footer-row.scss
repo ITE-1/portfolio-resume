@@ -3,7 +3,9 @@
     position: sticky;
     width: 100%;
     padding: 3%;
-    background-color:rgb(137, 102, 170);
+    background: rgba(38, 79, 120, 0.735);
+      
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 
     &.light {
         background-color: lightgrey;

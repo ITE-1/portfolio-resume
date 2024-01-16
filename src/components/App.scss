@@ -74,14 +74,14 @@ h1, h2, h3, h4, h5, h6 {
   
   &.light-theme {
     background-color: darkgray;
-    color: #070707;
+    color:white;
     
   }
   
   &.dark-theme {
     background-color: $MainColor2;
     font-weight: 600;
-    color: #070707;
+    color: white;
     
   }
 
@@ -118,9 +118,9 @@ h1, h2, h3, h4, h5, h6 {
   .footer{
    margin: 0 auto;
     width: 100%;
+ 
    
-   
-
+    
     border: 2px solid black;
   }
 }
