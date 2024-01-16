@@ -46,6 +46,7 @@ const sliderData = [
     return (
         <div className="body__content__row__window" id="works" >
             <div className="works__carousel"
+               
                  onTouchStart={handleTouchStart}
                  onTouchMove={handleTouchMove}
                 >
@@ -53,7 +54,7 @@ const sliderData = [
                     left
                 </div>
                 <div className="works__carousel__wrapper">
-                <div className={`block block${currentSlide}`} >{sliderData[currentSlide].title}</div>
+                <div className={`block block${currentSlide}`}  onClick={nextSlide} >{sliderData[currentSlide].title}</div>
                    
                 </div>
                 <div className="works__carousel__slide right" onClick={nextSlide}>
