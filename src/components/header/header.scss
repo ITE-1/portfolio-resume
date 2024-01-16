@@ -23,8 +23,10 @@
       }
     }
     &__row {
+      transition: opacity .6s;
+      opacity: .6;
       border-radius: 10px;
-      margin-left: 5%;
+      padding: 1% 1%;
       margin-top: 2%;
       z-index: 2;
       background: rgba(255, 255, 255, 0.42);
@@ -32,8 +34,8 @@
       box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
       backdrop-filter: blur(6.5px);
       -webkit-backdrop-filter: blur(6.5px);
-      border: 1px solid rgba(255, 255, 255, 0.24);
-      width: 90%;
+      // border: 1px solid rgba(255, 255, 255, 0.24);
+      width: 100vw;
       display: flex;
       justify-content: space-between;
       align-items: center;
