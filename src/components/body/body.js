@@ -27,15 +27,15 @@ const data = [
                   
                       <div className='body__content__row'>
                             <div className='body__content__row__block' >
-                                <h1 className='body__content__row__window__title' id='about'>Title</h1>
+                                <h1 className='body__content__row__block__title' id='about'>About</h1>
                                 <DownloadCv />
                             </div>
                             <div className='body__content__row__block' >
-                                <h1 className='body__content__row__window__title' id='works'>Title</h1>
+                                <h1 className='body__content__row__block__title' id='works'>Works</h1>
                                 <Works />
                             </div>
                             <div className='body__content__row__block' >
-                                <h1 className='body__content__row__window__title' id='contacts'>Title</h1>
+                                <h1 className='body__content__row__block__title' id='contacts'>Contacts</h1>
                                 <ContactUs />
                             </div>
 

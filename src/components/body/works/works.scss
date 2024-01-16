@@ -2,20 +2,20 @@
    border: 2px solid black;
     height: 70vh;
 
-    position: relative;
+
     &__carousel {
-        
+        position: relative;
         height: 70vh;
         display: grid;
         grid-template-columns: auto;
         &__slide{
             position: absolute;
             &.left{
-                left: 2%;
+                left:0;
                 bottom: 50%;
             }
             &.right{
-                right: 2%;
+                right: 1%;
                 bottom: 50%;
             }
         }

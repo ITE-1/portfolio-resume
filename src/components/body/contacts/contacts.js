@@ -40,12 +40,20 @@ const clearForm = (e) => {
    
       <form className='contactUS' ref={form} onSubmit={sendEmail} >
         {loading ? 'Форма успешн отправлена' : ''}
-      <label>Name</label>
+      <label>
+        <span>Name</span>
       <input type="text" name="user_name" value={value.userName} onChange={(e) => setValue({...value, userName: e.target.value})}/>
-      <label>Email</label>
+      </label>
+      
+      <label>
+        <span>Email</span>
       <input type="email" name="user_email" value={value.userEmail} onChange={(e) => setValue({...value, userEmail: e.target.value})} />
-      <label>Message</label>
-      <textarea name="message" value={value.text} onChange={(e) => setValue({...value, text: e.target.value})}/>
+
+      </label>
+      <label>
+        <span>Text</span>   
+      </label>
+      <textarea style={{border: '1px solid black'}} name="message" value={value.text} onChange={(e) => setValue({...value, text: e.target.value})}/>
       <button type="submit" onClick={() => clearForm() }>ss</button>
     </form>
     </div>

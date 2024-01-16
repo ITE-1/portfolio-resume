@@ -6,6 +6,7 @@
 
 
     form {
+      
         width: 25%;
         display: flex;
         flex-direction: column;
@@ -17,12 +18,25 @@
 }
 
 .contactUS{
+    padding: 1% 2%;
     margin-left: 2%;
     width: 40%;
     display: flex;  
         flex-direction: column;
+       border: 2px solid black;
+       label{
+        margin-bottom: 2%;
+       span{
+        margin-right: 2%;
+       }
+        input{
+           
+            padding: 1%;
+            border: 1px solid black;
+        }
+       }
     form {
-      
+       
     }
    
 }
