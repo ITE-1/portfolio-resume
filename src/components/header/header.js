@@ -39,17 +39,17 @@ document.addEventListener('scroll', navBar)
                             <li className='header__row__navigation__item'><span className='header__row__navigation__item__link' onClick={() => scrollToSection('about')}>About</span></li>
 
                         </ul>
-                        <span>|||</span>
+                       
                        
                     </div>
                 </div>
                 <div className='header__body'>
                 
                     {/* <img className='header__body__img' src="https://i.ibb.co/T2ZW8BK/your-front-end-developer-using-html-css-react.webp" alt="your-front-end-developer-using-html-css-react" border="0" /> */}
-                <h1 className='header__body__title'>Hello, World!</h1>
+                    <h1 className='header__body__title'>Hello, World!</h1>
               
                     
-                <div className='header__body__sliderDown' onClick={() => scrollToSection('about')}>slide down</div>
+                    <div className='header__body__sliderDown' onClick={() => scrollToSection('about')}>slide down</div>
                 </div>
               
                 
