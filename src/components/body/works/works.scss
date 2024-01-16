@@ -2,12 +2,23 @@
    border: 2px solid black;
     height: 70vh;
 
-
+    position: relative;
     &__carousel {
+        
         height: 70vh;
         display: grid;
-        grid-template-columns: 1% auto 1%;
-        
+        grid-template-columns: auto;
+        &__slide{
+            position: absolute;
+            &.left{
+                left: 2%;
+                bottom: 50%;
+            }
+            &.right{
+                right: 2%;
+                bottom: 50%;
+            }
+        }
         &__wrapper {
             margin-left: 2%;
             display: flex;
