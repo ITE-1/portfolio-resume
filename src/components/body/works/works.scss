@@ -11,6 +11,9 @@
         &__wrapper {
             margin-left: 2%;
             display: flex;
+            .block {
+                border-radius: 20%;
+            }
             .block0 {
                 width: 100%;
                 background-color: chocolate;
