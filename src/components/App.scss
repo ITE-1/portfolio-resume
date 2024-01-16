@@ -74,13 +74,15 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   
   &.light-theme {
-    background-color: $MainColor;
-    color: #000000;
+    background-color: darkgray;
+    color: #070707;
+    
   }
   
   &.dark-theme {
     background-color: $MainColor2;
     color: #ffffff;
+    
   }
 
  .scrollToTop{

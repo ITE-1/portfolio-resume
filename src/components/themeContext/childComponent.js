@@ -5,8 +5,23 @@ import LeftSideBar from '../sidebar/sidebar';
 import { useTheme, ThemeProvider } from './themeContext';
 
 export const ChildComponent = () => {
-    const { isDarkMode, setIsDarkMode, toggleTheme } = useTheme();
+    const { isDarkMode} = useTheme();
 
+    const showSliderUp = () => {
+      const currentYLocation = window.pageYOffset;
+    if(currentYLocation > 200) {
+       document.getElementById('scrollToTop').style.display = 'block'
+       setTimeout(() => {
+        document.getElementById('scrollTopInfo').style.display = 'none';
+      }, 5000)
+    } else {
+      document.getElementById('scrollToTop').style.display = 'none';
+    
+    }
+  }
+////////////////////////////
+
+window.addEventListener('scroll', showSliderUp)
     const slideUp = () => {
         window.scrollTo({
           top: 0,
@@ -16,7 +31,7 @@ export const ChildComponent = () => {
 
     return (
         <div className={`app ${isDarkMode ? 'dark-theme' : 'light-theme'}`}>
-        <button onClick={toggleTheme}>changeTheme</button>
+         
         <LeftSideBar />
         <button className='scrollToTop' id='scrollToTop' onClick={slideUp}>
           <span id='scrollTopInfo'>Навверх</span>

@@ -2,6 +2,10 @@
     bottom: 0;
     position: sticky;
     width: 100%;
-    padding: 5%;
-    background-color: darkmagenta;
+    padding: 3%;
+    background-color:rgb(137, 102, 170);
+
+    &.light {
+        background-color: lightgrey;
+    }
 }

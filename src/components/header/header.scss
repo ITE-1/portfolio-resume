@@ -1,23 +1,47 @@
 .header {
-    padding: 2%;
+ 
+  
     margin: 0 auto;
     &__body{
-      height: 70vh;
+      &.dark{
+        background-color: burlywood;
+      }
+      &.light{
+        background-color: darkgray;
+      }
+      
+      height: 100vh;
+      position: relative;
+      color: white;
+      &__sliderDown{
+        
+        scroll-behavior: smooth;
+        right: 50%;
+        bottom: 10%;
+        position: absolute;
+        z-index: 1;
+      }
     }
     &__row {
+      border-radius: 10px;
+      margin-left: 5%;
+      margin-top: 2%;
+      z-index: 2;
+      background: rgba(255, 255, 255, 0.42);
+      position: fixed;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(6.5px);
+      -webkit-backdrop-filter: blur(6.5px);
+      border: 1px solid rgba(255, 255, 255, 0.24);
+      width: 90%;
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
   
       &__navigation {
         padding: 1rem;
     
-        background: rgba(255, 255, 255, 0.42);
-        border-radius: 16px;
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-        backdrop-filter: blur(6.5px);
-        -webkit-backdrop-filter: blur(6.5px);
-        border: 1px solid rgba(255, 255, 255, 0.24);
+       
         ul {
           list-style: none;
           margin: 0;
@@ -34,7 +58,7 @@
               padding: 0.5rem; /* Добавление отступов внутри ссылок */
               border-radius: 5px; /* Создание скругленных углов */
               transition: background-color 0.3s ease; /* Плавное изменение цвета фона при наведении */
-  
+              color: inherit;
               &:hover {
                 background-color: rgba(0, 0, 0, 0.1); /* Изменение цвета фона при наведении */
               }

@@ -1,8 +1,6 @@
 import Resume from '../resume/resume';
 import DownloadCv from './body-content/downloadCV';
 import './body.scss';
-import {useState} from 'react';
-import Contacts from './contacts/contacts';
 import ContactUs from './contacts/contacts';
 import Works from './works/works';
 
