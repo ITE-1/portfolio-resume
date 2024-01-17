@@ -8,9 +8,8 @@
     flex-direction: column;
    justify-content: center;
    align-items: center;
-    max-width: 600px;
-    max-height: 600px;
-    
+  
+    font-size: 20px;
        border: 2px solid black;
 
        &__left{
@@ -29,15 +28,24 @@
         border: 1% solid black;
     }
     &__btn{
+        &:hover{
+            margin-top: 1deg;
+            position: relative;
+            transition: color .6s ease;
+            background-color: orange;
+        }
+        border-radius: 25px;
+        padding: 2% 3%;
+        font-size: 18px;
         font-weight: 600;
         color: white;
         background-color: cornflowerblue;
         border: 2px solid rgb(255, 25, 0);
         margin-top: 2%;
-        width: 25%;
-        height: 25px;
+     
     }
        label{
+       
         display: flex;
         justify-content: center;
         align-items: center;
@@ -47,6 +55,7 @@
         margin-right: 2%;
        }
         input{
+            font-size: 20px;
            width: 80%;
            margin-bottom: 1%;
            padding: 1%;

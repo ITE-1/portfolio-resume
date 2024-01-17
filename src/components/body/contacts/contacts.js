@@ -65,15 +65,16 @@ const clearForm = (e) => {
        
         <textarea 
       placeholder='text here...'
-      style={{border: '1px solid black', height: '70px', width: '400px'}} name="message" value={value.text} onChange={(e) => setValue({...value, text: e.target.value})}/>
+      style={{border: '1px solid black', height: '82px', width: '440px', fontSize: '20px'}} name="message" value={value.text} onChange={(e) => setValue({...value, text: e.target.value})}/>
         
       </label>
       
        
-        {loading ? <p className='contactUS__complete'>The form was sending, thank you!</p> : ''}
+       
      
      
-      <label style={{display: 'flex', justifyContent:'center', alignItems: 'center'}}><button className='contactUS__btn' type="submit" onClick={() => clearForm() }>SEND</button></label>
+<button className='contactUS__btn' type="submit" onClick={() => clearForm() }>SEND</button>
+{loading ? <p className='contactUS__complete'>The form was sending, thank you!</p> : ''}
     </form>
     
     </div>

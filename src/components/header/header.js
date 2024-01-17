@@ -7,7 +7,7 @@ const {toggleTheme, isDarkMode} = useTheme();
 
 const navBar = () => {
     const currentYLocation = window.pageYOffset;
-    if(currentYLocation > 150) {
+    if(currentYLocation > 250) {
         document.getElementById('headerRow').style.border = '5px solid rgba(255, 255, 255, .34)';
         document.getElementById('headerRow').style.opacity = '1.5';
         document.getElementById('headerRow').style.backgroundColor = 'rgba(38, 79, 120, 0.735)';
@@ -46,7 +46,8 @@ document.addEventListener('scroll', navBar)
                 <div className='header__body'>
                 
                     {/* <img className='header__body__img' src="https://i.ibb.co/T2ZW8BK/your-front-end-developer-using-html-css-react.webp" alt="your-front-end-developer-using-html-css-react" border="0" /> */}
-                    <h1 className='header__body__title'>Hello, World!</h1>
+                    
+                    <div className='header__body__title' ><h1>Hello, World!</h1></div>
               
                     
                     <div className='header__body__sliderDown' onClick={() => scrollToSection('about')}>slide down</div>
