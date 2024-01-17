@@ -91,26 +91,11 @@ h1, h2, h3, h4, h5, h6 {
   }
   position: fixed;
   opacity: .5;
-  top: 60%;
   right: 3%;
   display: none;
-  width: 35px;
-  height: 40px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 50%;
-  
+  bottom: 45%;
   cursor: pointer;
-  
   z-index: 1;
-    svg{
-      background-color: red;
-      border-radius: 80%;
-    }
-    svg:hover{
-      background-color: transparent;
-    }
  }
 
  

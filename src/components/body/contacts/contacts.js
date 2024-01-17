@@ -54,6 +54,7 @@ const clearForm = (e) => {
       <label>
         
       <input 
+              required
               placeholder='enter your email'
               type="email" 
               name="user_email" 

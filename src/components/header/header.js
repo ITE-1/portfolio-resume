@@ -50,7 +50,7 @@ document.addEventListener('scroll', navBar)
                     <div className='header__body__title' ><h1>Hello, World!</h1></div>
               
                     
-                    <div className='header__body__sliderDown' onClick={() => scrollToSection('about')}>slide down</div>
+                    <div className='header__body__sliderDown' onClick={() => scrollToSection('about')}><img className='element-with-pulse' width="50" height="50" src="https://img.icons8.com/ios-filled/50/FAB005/double-down.png" alt="double-down"/></div>
                 </div>
               
                 
