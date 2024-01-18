@@ -3,12 +3,8 @@ import DownloadCv from './body-content/downloadCV';
 import './body.scss';
 import ContactUs from './contacts/contacts';
 import Works from './works/works';
-
-
+/////////////////
 const Body = () => {
-
-    
-   
 /////////////////
 const data = [
                 {id: 'works', title: 'WORK', body: 'some information about me'}, 
@@ -18,39 +14,26 @@ const data = [
             ];
 ////////////////
 
-
+////////////////
     return (
-
             <div className="body" id='about'>
                 {/* <Resume /> */}
                 <div className='body__content' >
-                  
                       <div className='body__content__row'>
-                            <div className='body__content__row__block block2' >
-                               
+                            <div className='body__content__row__block block1' >
+                                <h1 className='body__content__row__block__title' id='about'>About</h1>
                                 <DownloadCv />
                             </div>
                             <div className='body__content__row__block block1' >
-                              
+                                <h1 className='body__content__row__block__title' id='works'>Works</h1>
                                 <Works />
                             </div>
                             <div className='body__content__row__block block3' >
                                 <h1 className='body__content__row__block__title' id='contacts'>Contacts</h1>
                                 <ContactUs />
-                            </div>
-
-                           
-                          
-                          
-                       
-                         
-                      </div>
-                       
-                            
-                      
-                  
+                            </div>  
+                      </div>    
                 </div>
-                
             </div>
     )
 }
